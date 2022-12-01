@@ -47,7 +47,7 @@ const Shell = () => {
 
   useFrame((state, delta) => {
     if (!isDesktopMode) return;
-    groupRef.current.rotation.y += delta * 0.075;
+    groupRef.current.rotation.y += delta * 0.025;
   });
 
   const meshMaterial = {
@@ -75,14 +75,14 @@ const Shell = () => {
         />
       </mesh> */}
 
-      <mesh rotation={[0, 0, 0]} position={[0, 0, 0]}>
+      {/* <mesh rotation={[0, 0, 0]} position={[0, 0, 0]}>
         <cylinderGeometry attach="geometry" args={[5, 5, 2.5, 32, 1, true]} />
         <meshPhysicalMaterial
           attach="material"
           {...meshMaterial}
           // color={getHex()}
         />
-      </mesh>
+      </mesh> */}
 
       {/* <mesh rotation={[0, 0, 0]} position={[0, -1, 0]}>
         <cylinderGeometry attach="geometry" args={[5, 5, 0.5, 32, 1, true]} />

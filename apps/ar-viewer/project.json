@@ -56,7 +56,7 @@
         "hmr": true,
         "port": 9000,
         "open": true,
-        "ssl": false,
+        "ssl": true,
         "sslKey": "./certs/macbook.local-key.pem",
         "sslCert": "./certs/macbook.local.pem"
       },

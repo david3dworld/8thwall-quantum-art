@@ -49,22 +49,9 @@ const Experience = () => {
         scale={[1, 1, 1]}
         className="quasar"
       >
-        <PresentationControls
-          enabled={true}
-          global={false}
-          cursor={true}
-          snap={true}
-          speed={2}
-          zoom={1}
-          rotation={[0, 0, 0]}
-          polar={[0, Math.PI / 2]}
-          azimuth={[-Infinity, Infinity]}
-          config={{ mass: 1, tension: 170, friction: 20 }}
-        >
-          <animated.group scale={quasarScale}>
-            <Quasar />
-          </animated.group>
-        </PresentationControls>
+        <animated.group scale={quasarScale}>
+          <Quasar />
+        </animated.group>
 
         <animated.group scale={sparkScale} visible={!isCaught}>
           <SparkStorm count={140} colors={palette} />
